@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98190566282E83680083B22F /* CRUDView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98190565282E83680083B22F /* CRUDView2.swift */; };
+		9837B8F428295DBA00CFAFD0 /* CloudKitExApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9837B8F328295DBA00CFAFD0 /* CloudKitExApp.swift */; };
+		9837B8F628295DBA00CFAFD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9837B8F528295DBA00CFAFD0 /* ContentView.swift */; };
+		9837B8F828295DBA00CFAFD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9837B8F728295DBA00CFAFD0 /* Assets.xcassets */; };
+		9837B8FB28295DBA00CFAFD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9837B8FA28295DBA00CFAFD0 /* Preview Assets.xcassets */; };
+		9837B90428295E6600CFAFD0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9837B90328295E6600CFAFD0 /* CloudKit.framework */; };
+		9837B906282A94B900CFAFD0 /* CRUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9837B905282A94B900CFAFD0 /* CRUDView.swift */; };
+		98E8507D282EA7B400B36C0D /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E8507C282EA7B400B36C0D /* HideKeyboard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		98190565282E83680083B22F /* CRUDView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDView2.swift; sourceTree = "<group>"; };
+		9837B8F028295DBA00CFAFD0 /* CloudKitEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudKitEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9837B8F328295DBA00CFAFD0 /* CloudKitExApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitExApp.swift; sourceTree = "<group>"; };
+		9837B8F528295DBA00CFAFD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9837B8F728295DBA00CFAFD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9837B8FA28295DBA00CFAFD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9837B90128295E6100CFAFD0 /* CloudKitEx.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudKitEx.entitlements; sourceTree = "<group>"; };
+		9837B90328295E6600CFAFD0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		9837B905282A94B900CFAFD0 /* CRUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDView.swift; sourceTree = "<group>"; };
+		98E8507C282EA7B400B36C0D /* HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9837B8ED28295DBA00CFAFD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9837B90428295E6600CFAFD0 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9837B8E728295DBA00CFAFD0 = {
+			isa = PBXGroup;
+			children = (
+				9837B8F228295DBA00CFAFD0 /* CloudKitEx */,
+				9837B8F128295DBA00CFAFD0 /* Products */,
+				9837B90228295E6600CFAFD0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9837B8F128295DBA00CFAFD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9837B8F028295DBA00CFAFD0 /* CloudKitEx.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9837B8F228295DBA00CFAFD0 /* CloudKitEx */ = {
+			isa = PBXGroup;
+			children = (
+				9837B90128295E6100CFAFD0 /* CloudKitEx.entitlements */,
+				9837B8F328295DBA00CFAFD0 /* CloudKitExApp.swift */,
+				9837B8F528295DBA00CFAFD0 /* ContentView.swift */,
+				9837B905282A94B900CFAFD0 /* CRUDView.swift */,
+				98190565282E83680083B22F /* CRUDView2.swift */,
+				9837B8F728295DBA00CFAFD0 /* Assets.xcassets */,
+				98E8507C282EA7B400B36C0D /* HideKeyboard.swift */,
+				9837B8F928295DBA00CFAFD0 /* Preview Content */,
+			);
+			path = CloudKitEx;
+			sourceTree = "<group>";
+		};
+		9837B8F928295DBA00CFAFD0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9837B8FA28295DBA00CFAFD0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9837B90228295E6600CFAFD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9837B90328295E6600CFAFD0 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9837B8EF28295DBA00CFAFD0 /* CloudKitEx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9837B8FE28295DBA00CFAFD0 /* Build configuration list for PBXNativeTarget "CloudKitEx" */;
+			buildPhases = (
+				9837B8EC28295DBA00CFAFD0 /* Sources */,
+				9837B8ED28295DBA00CFAFD0 /* Frameworks */,
+				9837B8EE28295DBA00CFAFD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudKitEx;
+			productName = CloudKitEx;
+			productReference = 9837B8F028295DBA00CFAFD0 /* CloudKitEx.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9837B8E828295DBA00CFAFD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					9837B8EF28295DBA00CFAFD0 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 9837B8EB28295DBA00CFAFD0 /* Build configuration list for PBXProject "CloudKitEx" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9837B8E728295DBA00CFAFD0;
+			productRefGroup = 9837B8F128295DBA00CFAFD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9837B8EF28295DBA00CFAFD0 /* CloudKitEx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9837B8EE28295DBA00CFAFD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9837B8FB28295DBA00CFAFD0 /* Preview Assets.xcassets in Resources */,
+				9837B8F828295DBA00CFAFD0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9837B8EC28295DBA00CFAFD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98E8507D282EA7B400B36C0D /* HideKeyboard.swift in Sources */,
+				9837B8F628295DBA00CFAFD0 /* ContentView.swift in Sources */,
+				98190566282E83680083B22F /* CRUDView2.swift in Sources */,
+				9837B8F428295DBA00CFAFD0 /* CloudKitExApp.swift in Sources */,
+				9837B906282A94B900CFAFD0 /* CRUDView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9837B8FC28295DBA00CFAFD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9837B8FD28295DBA00CFAFD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9837B8FF28295DBA00CFAFD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CloudKitEx/CloudKitEx.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CloudKitEx/Preview Content\"";
+				DEVELOPMENT_TEAM = TDL4PT97XP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.lrkhan.CloudKitEx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9837B90028295DBA00CFAFD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CloudKitEx/CloudKitEx.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CloudKitEx/Preview Content\"";
+				DEVELOPMENT_TEAM = TDL4PT97XP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.lrkhan.CloudKitEx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9837B8EB28295DBA00CFAFD0 /* Build configuration list for PBXProject "CloudKitEx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9837B8FC28295DBA00CFAFD0 /* Debug */,
+				9837B8FD28295DBA00CFAFD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9837B8FE28295DBA00CFAFD0 /* Build configuration list for PBXNativeTarget "CloudKitEx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9837B8FF28295DBA00CFAFD0 /* Debug */,
+				9837B90028295DBA00CFAFD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9837B8E828295DBA00CFAFD0 /* Project object */;
+}
