@@ -15,6 +15,8 @@
 		9837B90428295E6600CFAFD0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9837B90328295E6600CFAFD0 /* CloudKit.framework */; };
 		9837B906282A94B900CFAFD0 /* CRUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9837B905282A94B900CFAFD0 /* CRUDView.swift */; };
 		98E8507D282EA7B400B36C0D /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E8507C282EA7B400B36C0D /* HideKeyboard.swift */; };
+		98E8508C2831816100B36C0D /* CKPushNot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E8508B2831816100B36C0D /* CKPushNot.swift */; };
+		98E8508E283187ED00B36C0D /* CloudKitUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E8508D283187ED00B36C0D /* CloudKitUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		9837B90328295E6600CFAFD0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		9837B905282A94B900CFAFD0 /* CRUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDView.swift; sourceTree = "<group>"; };
 		98E8507C282EA7B400B36C0D /* HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
+		98E8508B2831816100B36C0D /* CKPushNot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKPushNot.swift; sourceTree = "<group>"; };
+		98E8508D283187ED00B36C0D /* CloudKitUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +71,10 @@
 				9837B8F528295DBA00CFAFD0 /* ContentView.swift */,
 				9837B905282A94B900CFAFD0 /* CRUDView.swift */,
 				98190565282E83680083B22F /* CRUDView2.swift */,
+				98E8508B2831816100B36C0D /* CKPushNot.swift */,
 				9837B8F728295DBA00CFAFD0 /* Assets.xcassets */,
 				98E8507C282EA7B400B36C0D /* HideKeyboard.swift */,
+				98E8508D283187ED00B36C0D /* CloudKitUtility.swift */,
 				9837B8F928295DBA00CFAFD0 /* Preview Content */,
 			);
 			path = CloudKitEx;
@@ -161,9 +167,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				98E8507D282EA7B400B36C0D /* HideKeyboard.swift in Sources */,
+				98E8508C2831816100B36C0D /* CKPushNot.swift in Sources */,
 				9837B8F628295DBA00CFAFD0 /* ContentView.swift in Sources */,
 				98190566282E83680083B22F /* CRUDView2.swift in Sources */,
 				9837B8F428295DBA00CFAFD0 /* CloudKitExApp.swift in Sources */,
+				98E8508E283187ED00B36C0D /* CloudKitUtility.swift in Sources */,
 				9837B906282A94B900CFAFD0 /* CRUDView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

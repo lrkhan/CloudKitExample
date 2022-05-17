@@ -8,10 +8,50 @@
 import CloudKit
 import SwiftUI
 
-struct FruitModel: Hashable {
+//protocol CloudKitableProtocol {
+//    init?(record: CKRecord)
+//}
+
+struct FruitModel: Hashable, CloudKitableProtocol {
     let name: String
     let imgURL: URL?
     let record: CKRecord
+    
+    init?(record: CKRecord) {
+        guard let name = record["name"] as? String else {return nil}
+        self.name = name
+        let imgAsset = record["image"] as? CKAsset
+        self.imgURL = imgAsset?.fileURL
+        self.record = record
+    }
+    
+    init(name: String, imgURL: URL? = nil, record: CKRecord) {
+        self.name = name
+        self.imgURL = imgURL
+        self.record = record
+    }
+    
+    init?(name: String, imgURL: URL? = nil) {
+        let record = CKRecord(recordType: "Fruits")
+        
+        record["name"] = name
+        
+        if let imgURL = imgURL {
+            let asset = CKAsset(fileURL: imgURL)
+            
+            record["image"] = asset
+        }
+        
+        self.init(record: record)
+    }
+    
+    func update(newName: String) -> FruitModel? {
+        let rec = self.record
+        
+        rec["name"] = newName
+        
+        return FruitModel(record: rec)
+    }
 }
 
 class Cloud: ObservableObject {
@@ -28,13 +68,33 @@ class Cloud: ObservableObject {
         addItem(name: text)
     }
     
-    private func addItem(name: String) {
-        // if new type iCloud will make a new type
-        let newFruit = CKRecord(recordType: "Fruits")
-        
-        // dict - create
-        newFruit["name"] = name
-        
+//    private func addItem(name: String) {
+//        // if new type iCloud will make a new type
+//        let newFruit = CKRecord(recordType: "Fruits")
+//
+//        // dict - create
+//        newFruit["name"] = name
+//
+//        guard
+//            let img = UIImage(named: "key"),
+//            let path = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first?.appendingPathComponent("key.jpg"),
+//            let data = img.jpegData(compressionQuality: 1.0)
+//        else {return}
+//
+//        do {
+//            try data.write(to: path)
+//
+//            let asset = CKAsset(fileURL: path)
+//
+//            newFruit["image"] = asset
+//        } catch let err {
+//            print(err)
+//        }
+//
+//        saveItem(record: newFruit)
+//    }
+    
+    static func addItem(name: String) {
         guard
             let img = UIImage(named: "key"),
             let path = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first?.appendingPathComponent("key.jpg"),
@@ -44,14 +104,16 @@ class Cloud: ObservableObject {
         do {
             try data.write(to: path)
             
-            let asset = CKAsset(fileURL: path)
+            guard let newFruit = FruitModel(name: name, imgURL: path) else {return}
             
-            newFruit["image"] = asset
+            CloudKitUtility.add(item: newFruit) { result in
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    self.fetchItems()
+                }
+            }
         } catch let err {
             print(err)
         }
-        
-        saveItem(record: newFruit)
     }
     
     private func saveItem(record: CKRecord) {
@@ -107,13 +169,11 @@ class Cloud: ObservableObject {
     }
     
     func updateItem(fruit: FruitModel){
-        let record = fruit.record
-        
         let newName = "\(fruit.name) \(Int.random(in: 0...100))"
         
-        record["name"] = newName
+        fruit.update(newName: newName)
         
-        saveItem(record: record)
+        CloudKitUtility.saveItem(record: fruit.record, completion: <#T##(Result<Bool, Error>) -> ()#>)
     }
     
     func deleteItem(indexSet: IndexSet) {

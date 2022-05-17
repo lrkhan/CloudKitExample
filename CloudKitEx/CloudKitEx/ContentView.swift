@@ -23,22 +23,13 @@ class CloudKitModel: ObservableObject {
     }
     
     private func getiCloudStatus() {
-        CKContainer.default().accountStatus { returnedStats, returnedErr in
+        CloudKitUtility.getiCloudStatus {[weak self] completion in
             DispatchQueue.main.async {
-                switch returnedStats {
-                case .couldNotDetermine:
-                    self.status = iCloudAccountErr.couldNotDetermine.rawValue
-                case .available:
-                    self.status = iCloudAccountErr.available.rawValue
-                    self.iCloudIn = true
-                case .restricted:
-                    self.status = iCloudAccountErr.restricted.rawValue
-                case .noAccount:
-                    self.status = iCloudAccountErr.noAccount.rawValue
-                case .temporarilyUnavailable:
-                    self.status = iCloudAccountErr.temporarilyUnavailable.rawValue
-                @unknown default:
-                    self.status = iCloudAccountErr.unknown.rawValue
+                switch completion{
+                case .success(_):
+                    self?.iCloudIn = true
+                case .failure(let err):
+                    print(err)
                 }
             }
         }
@@ -50,11 +41,12 @@ class CloudKitModel: ObservableObject {
     
     // user needs to grand permission to get iCloud name -> maybe add additional step incse they select don't allow
     func requestPermission() {
-        CKContainer.default().requestApplicationPermission([.userDiscoverability]) {[weak self] returnedStat, returnedErr in
-            DispatchQueue.main.async {
-                if returnedStat == .granted {
-                    self?.permissionStat = true
-                }
+        CloudKitUtility.requestApplicationPersmission {[weak self] completion in
+            switch completion {
+            case .success(_):
+                self?.permissionStat = true
+            case .failure(let err):
+                print(err)
             }
         }
     }

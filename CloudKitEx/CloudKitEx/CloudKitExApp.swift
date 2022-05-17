@@ -11,7 +11,7 @@ import SwiftUI
 struct CloudKitExApp: App {
     var body: some Scene {
         WindowGroup {
-            CRUDView2()
+            CKPushNot()
         }
     }
 }
