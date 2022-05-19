@@ -68,31 +68,31 @@ class Cloud: ObservableObject {
         addItem(name: text)
     }
     
-//    private func addItem(name: String) {
-//        // if new type iCloud will make a new type
-//        let newFruit = CKRecord(recordType: "Fruits")
-//
-//        // dict - create
-//        newFruit["name"] = name
-//
-//        guard
-//            let img = UIImage(named: "key"),
-//            let path = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first?.appendingPathComponent("key.jpg"),
-//            let data = img.jpegData(compressionQuality: 1.0)
-//        else {return}
-//
-//        do {
-//            try data.write(to: path)
-//
-//            let asset = CKAsset(fileURL: path)
-//
-//            newFruit["image"] = asset
-//        } catch let err {
-//            print(err)
-//        }
-//
-//        saveItem(record: newFruit)
-//    }
+    private func addItem(name: String) {
+        // if new type iCloud will make a new type
+        let newFruit = CKRecord(recordType: "Fruits")
+
+        // dict - create
+        newFruit["name"] = name
+
+        guard
+            let img = UIImage(named: "key"),
+            let path = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first?.appendingPathComponent("key.jpg"),
+            let data = img.jpegData(compressionQuality: 1.0)
+        else {return}
+
+        do {
+            try data.write(to: path)
+
+            let asset = CKAsset(fileURL: path)
+
+            newFruit["image"] = asset
+        } catch let err {
+            print(err)
+        }
+
+        saveItem(record: newFruit)
+    }
     
     static func addItem(name: String) {
         guard
